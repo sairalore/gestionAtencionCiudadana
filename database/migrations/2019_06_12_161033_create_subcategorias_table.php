@@ -17,6 +17,8 @@ class CreateSubcategoriasTable extends Migration
             $table->bigIncrements('id');
             $table->String('nombre',100)->unique();
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 
